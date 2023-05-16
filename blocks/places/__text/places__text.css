@@ -1,0 +1,19 @@
+.places__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 26px;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .places__text {
+    row-gap: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .places__text {
+    row-gap: 0;
+  }
+}

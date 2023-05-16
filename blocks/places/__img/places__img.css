@@ -1,0 +1,9 @@
+.places__img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .places__img {
+    padding-top: 32px;
+  }
+}

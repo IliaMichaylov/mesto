@@ -1,0 +1,23 @@
+.places__link-web {
+    padding-top: 12px;
+    max-width: 456px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .places__link-web {
+    padding-left: 16px;
+    }    
+  }
+
+  .places__link-web:hover {
+    opacity: 0.8;
+  }

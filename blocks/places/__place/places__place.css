@@ -1,0 +1,32 @@
+.places__place {
+  padding-top: 80px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(420px, 460px) minmax(420px, 500px);
+  grid-gap: 48px 40px;
+  width: 100%;
+}
+
+@media (max-width: 1279px) {
+  .places__place {
+    grid-template-columns: minmax(440px, 460px) minmax(460px, 480px);
+    grid-gap: 48px 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .places__place {
+    padding-top: 73px;
+    grid-template-columns: minmax(340px, 340px) minmax(352px, 352px);
+    gap: 48px 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .places__place {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
