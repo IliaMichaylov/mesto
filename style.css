@@ -61,6 +61,8 @@
 }
 
 .profile__info {
+  display: grid;
+  align-items: center;
   max-height: 73px;
   max-width: 336px;
   color: #ffffff;
@@ -68,6 +70,7 @@
 
 @media (max-width: 768px) {
   .profile__info {
+    
     margin: 0;
     padding-top: 22.25px;
 
@@ -75,27 +78,42 @@
 }
 
 .profile__title {
+  grid-column: 1; 
+  grid-row: 1;
   margin: 16px 0 0 0;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
   .profile__title {
     margin: 0;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
   }
 }
 
 .profile__subtitle {
   margin: 16px 0 0 0;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
 }
 
 @media (max-width: 768px){
   .profile__subtitle {
     margin: 0;
     padding-top: 14px;
+    text-align: center;
   }
 }
 
 .pencil__button {
+  grid-column: 2;
+  grid-row: 1;
   margin: 15px auto auto 18px;
   background-color: #2a2c2f;
   background-image: url(./images/Edit.svg);
@@ -110,8 +128,9 @@
 
 @media (max-width: 768px) {
   .pencil__button {
-    position: absolute;
-    margin: 149px -200px 0 0;
+    margin: 0 0 0 10px;
+    min-width: 18px; 
+    min-height: 18px; 
   }
 }
 
@@ -218,6 +237,9 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
 }
 
 .element__heart {
@@ -337,12 +359,13 @@
 .input__name {
   margin: 54px 0 0 0;
   border: none;
+  
 }
 
 .input__subname {
   margin: 30px 0 0 0;
   border: none;
-}
+ }
 
 .line__input {
   margin: 0;
