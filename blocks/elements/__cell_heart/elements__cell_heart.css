@@ -1,0 +1,16 @@
+.elements__cell_heart {
+    max-width: 22px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .elements__cell_heart:hover {
+    opacity: 0.5;
+  }
+  
+  .elements__cell_heart:active {
+    opacity: 1;
+    background-image: url("./images/blackheart.svg");
+    background-repeat: no-repeat;
+    align-self: center;
+  }

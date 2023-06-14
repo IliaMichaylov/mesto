@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <script src="./index.js" defer></script>
   </head>
   <body class="page">
@@ -24,70 +24,68 @@
       </div>
         <div class="profile__info">
        <h1 class="profile__title">Жак-Ив Кусто</h1>
-       <button id="open-popup-button" class="pencil__button">
+       <button id="open-popup-button" class="profile__button">
       </button>
        <p class="profile__subtitle">Исследователь океана
         </p> 
-      </div>
-      
-         <button class="add__button"><img src="./images/Plus.svg" class="button__img"></button>
+      </div>      
+        <button class="profile__add_button"><img src="./images/Plus.svg" class="profile__button_img"></button>
       </section>
       <div id="edit-popup" class="popup">
         <div class="popup__content">
           <form id="edit-form" class="popup__form">
-            <h2 class="title__form">Редактировать профиль</h2>
-            <input id="name-input" type="text" class="input__name"/>
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <input id="name-input" type="text" class="popup__input_name"/>
             <div class="line__input"></div>
-            <input id="subname-input" type="text" class="input__subname"/>
-            <div class="line__input"></div>
-            <button type="submit" class="button__save">Сохранить</button>
+            <input id="subname-input" type="text" class="popup__input_subname"/>
+            <div class="popup__input_line"></div>
+            <button type="submit" class="popup__button_save">Сохранить</button>
             </form>
-  
-            <button id="close-popup-button" class="popup__close-button"><img src="./images/Close Icon.svg"></button>
+              <button id="close-popup-button" class="popup__button_close"><img src="./images/Close Icon.svg"></button>
          </div>
       </div>
       <section class="elements">
-        <ul class="elements__list">
-        <li class="element">
-          <img src="./images/karachaevsk.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Карачаевск</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <ul class="elements__cell_list">
+        <li class="elements__cell">
+          <img src="./images/karachaevsk.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Карачаевск</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
         </div>
         </li>
-        <li class="element">
-          <img src="./images/Elbrus.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Гора Эльбрус</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <li class="elements__cell">
+          <img src="./images/Elbrus.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Гора Эльбрус</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
         </div>
         </li>
-        <li class="element">
-          <img src="./images/mount_dombay.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Домбай</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <li class="elements__cell">
+          <img src="./images/mount_dombay.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Домбай</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
         </div>
         </li>
-        <li class="element">
-          <img src="./images/Elbrus.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Гора Эльбрус</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <li class="elements__cell">
+          <img src="./images/Elbrus.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Гора Эльбрус</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
         </div>
         </li>
-        <li class="element">
-          <img src="./images/mount_dombay.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Домбай</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <li class="elements__cell">
+          <img src="./images/mount_dombay.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Домбай</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
           </div>
         </li>
-        <li class="element">
-          <img src="./images/karachaevsk.jpg" class="element__img">
-          <div class="element__name">
-          <h2 class="element__title">Карачаево-Черкессия</h2>
-          <img src="./images/heart.svg" class="element__heart">
+        <li class="elements__cell">
+          <img src="./images/karachaevsk.jpg" class="elements__cell_img">
+          <div class="elements__cell_name">
+          <h2 class="elements__cell_title">Карачаево-Черкессия</h2>
+          <img src="./images/heart.svg" class="elements__cell_heart">
         </div>
         </li>
       </ul>        

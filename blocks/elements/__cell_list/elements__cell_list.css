@@ -1,0 +1,23 @@
+.elements__cell_list {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 17px;
+    justify-content: end;
+  }
+
+  @media (max-width: 1279px) {
+    .elementss__cell_list {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .elementss__cell_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

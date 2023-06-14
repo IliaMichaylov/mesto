@@ -1,0 +1,14 @@
+.profile__info {
+    display: grid;
+    align-items: center;
+    max-height: 73px;
+    max-width: 336px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .profile__info {
+      margin: 0;
+      padding-top: 22.25px;
+    }
+  }

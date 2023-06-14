@@ -31,7 +31,7 @@
   max-width: 880px;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   .profile {
     padding-top: 42px;
     display: flex;
@@ -39,7 +39,6 @@
     align-items: center;
     max-width: 282px;
   }
-  
 }
 
 .profile__img {
@@ -49,7 +48,7 @@
 
 @media (max-width: 768px) {
   .profile__img {
-  margin: -3.75px 0 0 0;
+    margin: -3.75px 0 0 0;
   }
 }
 
@@ -70,19 +69,17 @@
 
 @media (max-width: 768px) {
   .profile__info {
-    
     margin: 0;
     padding-top: 22.25px;
-
   }
 }
 
 .profile__title {
-  grid-column: 1; 
+  grid-column: 1;
   grid-row: 1;
   margin: 16px 0 0 0;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -98,12 +95,12 @@
 
 .profile__subtitle {
   margin: 16px 0 0 0;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .profile__subtitle {
     margin: 0;
     padding-top: 14px;
@@ -111,7 +108,7 @@
   }
 }
 
-.pencil__button {
+.profile__button {
   grid-column: 2;
   grid-row: 1;
   margin: 15px auto auto 18px;
@@ -127,14 +124,14 @@
 }
 
 @media (max-width: 768px) {
-  .pencil__button {
+  .profile__button {
     margin: 0 0 0 10px;
-    min-width: 18px; 
-    min-height: 18px; 
+    min-width: 18px;
+    min-height: 18px;
   }
 }
 
-.pencil__button:hover {
+.profile__button:hover {
   opacity: 0.6;
   transition: 0.3ms;
 }
@@ -144,7 +141,7 @@
   max-height: 10px;
 }
 
-.add__button {
+.profile__add_button {
   margin: 35px 0 35px auto;
   border: 2px #ffffff solid;
   min-width: 150px;
@@ -155,21 +152,20 @@
 }
 
 @media (max-width: 768px) {
-  .add__button {
+  .profile__add_button {
     margin: 36px 0 0 0;
     min-width: 282px;
     max-height: 100vh;
     height: 50px;
-
   }
 }
 
-.add__button:hover {
+.profile__add_button:hover {
   opacity: 0.6;
   transition: 0.3ms;
 }
 
-.button__img {
+.profile__button_img {
   min-width: 22px;
   min-height: 22px;
 }
@@ -180,7 +176,7 @@
   max-width: 880px;
 }
 
-.elements__list {
+.elements__cell_list {
   margin: 0 auto;
   padding: 0;
   display: grid;
@@ -190,23 +186,21 @@
 }
 
 @media (max-width: 1279px) {
-  .elements__list {
+  .elementss__cell_list {
     grid-template-columns: repeat(2, auto);
     justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  .elements__list {
+  .elementss__cell_list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 }
 
-
-.element {
+.elements__cell {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -216,14 +210,14 @@
   box-sizing: border-box;
 }
 
-.element__img {
+.elements__cell_img {
   width: 282px;
   height: 282px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.element__name {
+.elements__cell_name {
   margin: 25px 0 0 21px;
   display: flex;
   flex-direction: row;
@@ -232,31 +226,29 @@
   max-width: 246px;
 }
 
-.element__title {
+.elements__cell_title {
   margin: 0;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.element__heart {
+.elements__cell_heart {
   max-width: 22px;
   opacity: 1;
   cursor: pointer;
 }
 
-
-.element__heart:hover {
+.elements__cell_heart:hover {
   opacity: 0.5;
-
 }
 
-.element__heart:active {
+.elements__cell_heart:active {
   opacity: 1;
-  background-image: url('./images/blackheart.svg');
+  background-image: url("./images/blackheart.svg");
   background-repeat: no-repeat;
   align-self: center;
 }
@@ -267,7 +259,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .footer {
     margin: 0 auto;
     margin-top: 14px;
@@ -313,7 +305,7 @@
   box-sizing: border-box;
 }
 
-.button__save {
+.popup__button_save {
   margin-top: 48px;
   background-color: #000000;
   color: #ffffff;
@@ -329,12 +321,12 @@
   cursor: pointer;
 }
 
-.button__save:hover {
+.popup__button_save:hover {
   opacity: 0.8;
   transition: 0.3ms;
 }
 
-.popup__close-button {
+.popup__button_close {
   width: 32px;
   height: 32px;
   border: none;
@@ -348,29 +340,27 @@
   cursor: pointer;
 }
 
-.popup__close-button:hover {
+.popup__button_close:hover {
   opacity: 0.6;
 }
 
-.title__form {
+.pop__title {
   margin: 0;
 }
 
-.input__name {
+.popup__input_name {
   margin: 54px 0 0 0;
   border: none;
-  
 }
 
-.input__subname {
+.popup__input_subname {
   margin: 30px 0 0 0;
   border: none;
- }
+}
 
-.line__input {
+.popup__input_line {
   margin: 0;
   padding-top: 13px;
   border-bottom: 1px solid #000000;
   opacity: 0.2;
 }
-
