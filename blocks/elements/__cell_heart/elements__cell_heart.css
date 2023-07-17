@@ -10,7 +10,7 @@
   
   .elements__cell_heart:active {
     opacity: 1;
-    background-image: url("./images/blackheart.svg");
+    background-image: url('/images/blackheart.svg');
     background-repeat: no-repeat;
     align-self: center;
   }

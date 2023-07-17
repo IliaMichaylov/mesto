@@ -1,3 +1,11 @@
-.pop__title {
+.popup__title {
     margin: 0;
+    font-size: 24px;
   }
+
+  @media (max-width: 768px) {
+    .popup__title {
+      padding: 0;
+      font-size: 18px;
+    }
+  }  

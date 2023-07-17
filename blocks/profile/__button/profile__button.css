@@ -1,7 +1,7 @@
 .profile__button {
   grid-column: 2;
   grid-row: 1;
-  margin: 15px auto auto 18px;
+  margin: 20px auto auto 18px;
   background-color: #2a2c2f;
   background-image: url(/images/Edit.svg);
   background-repeat: no-repeat;
