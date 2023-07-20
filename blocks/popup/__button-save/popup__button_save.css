@@ -1,4 +1,4 @@
-.popup__button_save {
+.popup__button-save {
     margin-top: 48px;
     background-color: #000000;
     color: #ffffff;
@@ -14,13 +14,13 @@
     cursor: pointer;
   }
   
-  .popup__button_save:hover {
+  .popup__button-save:hover {
     opacity: 0.8;
     transition: 0.3ms;
   }
 
   @media (max-width: 768px){
-    .popup__button_save {
+    .popup__button-save {
       margin: 45px 0 0 0;
       max-width: 238px;
       font-size: 14px;
