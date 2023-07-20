@@ -1,4 +1,4 @@
-.elements__cell_list {
+.elements__cell-list {
   margin: 0 auto;
   padding: 0;
   display: grid;
@@ -8,14 +8,14 @@
 }
 
 @media (max-width: 1279px) {
-  .elements__cell_list {
+  .elements__cell-list {
     grid-template-columns: repeat(2, auto);
     justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
-  .elements__cell_list {
+  .elements__cell-list {
     display: flex;
     flex-direction: column;
     align-items: center;

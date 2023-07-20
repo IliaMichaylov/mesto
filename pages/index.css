@@ -6,11 +6,11 @@
 @import url(../blocks/header/__line/header__line.css);
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/__cell/elements__cell.css);
-@import url(../blocks/elements/__cell_heart/elements__cell_heart.css);
-@import url(../blocks/elements/__cell_img/elements__cell_img.css);
-@import url(../blocks/elements/__cell_list/elements__cell_list.css);
-@import url(../blocks/elements/__cell_name/elements__cell_name.css);
-@import url(../blocks/elements/__cell_title/elements__cell_title.css);
+@import url(../blocks/elements/__cell-heart/elements__cell-heart.css);
+@import url(../blocks/elements/__cell-img/elements__cell-img.css);
+@import url(../blocks/elements/__cell-list/elements__cell-list.css);
+@import url(../blocks/elements/__cell-name/elements__cell-name.css);
+@import url(../blocks/elements/__cell-title/elements__cell-title.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/profile/profile.css);
