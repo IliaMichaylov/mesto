@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
-    .header__line {
-      max-width: 356px;
-    }
+@media (max-width: 1279px) {
+  .header__line {
+    max-width: 580px;
   }
+}
 
-  @media (max-width: 1280px) { 
-    .header__line {
-      max-width: 580px;
-    }
+@media (max-width: 768px) {
+  .header__line {
+    max-width: 356px;
   }
+}
