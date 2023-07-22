@@ -3,96 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesto</title>
+    <title lang="en">Mesto</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <script src="./index.js" defer></script>
   </head>
   <body class="page">
     <header class="header">
       <a href="#" class="header__logo"
-          ><img
-            src="./images/logo.svg"
-            class="header__logo-img"
-            alt="Логотип Mesto"
-        /></a> 
-        <img src="./images/Line.png" class="header__line">
+        ><img
+          src="./images/logo.svg"
+          class="header__logo-img"
+          alt="Логотип Mesto"
+      /></a>
     </header>
     <main>
       <section class="profile">
         <div class="profile__img">
-        <img src="./images/_kusto.jpg" class="profile__avatar" alt="Жак Ив Кусто">
-      </div>
+          <img
+            src="./images/_kusto.jpg"
+            class="profile__avatar"
+            alt="Жак Ив Кусто"
+          />
+        </div>
         <div class="profile__info">
-       <h1 class="profile__title">Жак-Ив Кусто</h1>
-       <button id="open-popup-button" class="profile__button">
-      </button>
-       <p class="profile__subtitle">Исследователь океана
-        </p> 
-      </div>      
-        <button class="profile__add-button"><img src="./images/Plus.svg" class="profile__button-img"></button>
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button id="open-popup-button" class="profile__button"></button>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button">
+          <img src="./images/Plus.svg" class="profile__button-img" />
+        </button>
       </section>
       <div id="edit-popup" class="popup">
         <div class="popup__content">
           <form id="edit-form" class="popup__form">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <input id="name-input" type="text" class="popup__input-name"/>
+            <input id="name-input" type="text" class="popup__input-name" />
             <div class="popup__input-line"></div>
-            <input id="subname-input" type="text" class="popup__input-subname"/>
+            <input
+              id="subname-input"
+              type="text"
+              class="popup__input-subname"
+            />
             <div class="popup__input-line"></div>
             <button type="submit" class="popup__button-save">Сохранить</button>
-            </form>
-              <button id="close-popup-button" class="popup__button-close"></button>
-         </div>
+          </form>
+          <button id="close-popup-button" class="popup__button-close"></button>
+        </div>
       </div>
       <section class="elements">
         <ul class="elements__cell-list">
-        <li class="elements__cell">
-          <img src="./images/karachaevsk.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Карачаевск</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-        </div>
-        </li>
-        <li class="elements__cell">
-          <img src="./images/Elbrus.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Гора Эльбрус</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-        </div>
-        </li>
-        <li class="elements__cell">
-          <img src="./images/mount_dombay.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Домбай</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-        </div>
-        </li>
-        <li class="elements__cell">
-          <img src="./images/Elbrus.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Гора Эльбрус</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-        </div>
-        </li>
-        <li class="elements__cell">
-          <img src="./images/mount_dombay.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Домбай</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-          </div>
-        </li>
-        <li class="elements__cell">
-          <img src="./images/karachaevsk.jpg" class="elements__cell-img">
-          <div class="elements__cell-name">
-          <h2 class="elements__cell-title">Карачаево-Черкессия</h2>
-          <img src="./images/heart.svg" class="elements__cell-heart">
-        </div>
-        </li>
-      </ul> 
-      </section>       
+          <li class="elements__cell">
+            <img src="./images/karachaevsk.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Карачаевск</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+          <li class="elements__cell">
+            <img src="./images/Elbrus.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Гора Эльбрус</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+          <li class="elements__cell">
+            <img src="./images/mount_dombay.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Домбай</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+          <li class="elements__cell">
+            <img src="./images/Elbrus.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Гора Эльбрус</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+          <li class="elements__cell">
+            <img src="./images/mount_dombay.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Домбай</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+          <li class="elements__cell">
+            <img src="./images/karachaevsk.jpg" class="elements__cell-img" />
+            <div class="elements__cell-name">
+              <h2 class="elements__cell-title">Карачаево-Черкессия</h2>
+              <img src="./images/heart.svg" class="elements__cell-heart" />
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
-   </body>
+    <script src="./index.js"></script>
+  </body>
 </html>
