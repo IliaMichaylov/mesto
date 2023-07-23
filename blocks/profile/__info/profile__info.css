@@ -4,6 +4,7 @@
     max-height: 73px;
     max-width: 336px;
     color: #ffffff;
+    margin: 0 0 auto 0;
   }
   
   @media (max-width: 768px) {
