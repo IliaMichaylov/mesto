@@ -6,6 +6,7 @@
     background-color: #000000;
     opacity: 1;
     cursor: pointer;
+    border-radius: 2px;
   }
   
   @media (max-width: 768px) {
