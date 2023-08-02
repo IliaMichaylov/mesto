@@ -1,0 +1,20 @@
+.elements__cell-like {
+  min-width: 22px;
+  height: 19px;
+  cursor: pointer;
+  background-image: url(../../../images/heart.svg);
+  border: none;
+  object-fit: contain;
+  object-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  background-color: transparent;
+}
+
+.elements__cell-like:hover {
+  opacity: 0.5;
+}
+
+.elements__cell-like_active {
+  background-image: url(../../../images/blackheart.svg);
+}
