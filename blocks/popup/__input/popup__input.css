@@ -1,5 +1,5 @@
-.popup__input-name {
-    margin: 54px 0 0 0;
+.popup__input {
+    margin: 25px 0 0 0;
     border: none;
     max-width: 358px;
     min-height: 27px;
@@ -8,7 +8,7 @@
   }
 
 @media (max-width: 768px) {
-  .popup__input-name {
+  .popup__input {
     margin: 75px 0 0 0;
   }
 }

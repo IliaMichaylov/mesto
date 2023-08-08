@@ -1,11 +1,12 @@
 .header__logo {
-max-width: 142px;
-cursor: pointer;
+  max-width: 142px;
+  margin-bottom: 41px;
+  cursor: pointer;
+  border: none;
 }
 
 @media (max-width: 768px) {
-    .header__logo {
-        max-width: 103.74px;
-    }
+  .header__logo {
+    max-width: 103.74px;
+  }
 }
-
