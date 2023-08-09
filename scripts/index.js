@@ -9,14 +9,14 @@ const editForm = document.querySelector("#edit-form");
 const savePopupButton = document.querySelector("#save-popup-button");
 
 openPopupButton.addEventListener("click", function () {
-  editPopup.classList.add("popup_is-opened");
+  editPopup.classList.add("popup__opened");
 });
 closePopupButton.addEventListener("click", function () {
-  editPopup.classList.remove("popup_is-opened");
+  editPopup.classList.remove("popup__opened");
 });
 
 savePopupButton.addEventListener("click", function () {
-  editPopup.classList.remove("popup_is-opened");
+  editPopup.classList.remove("popup__opened");
 });
 
 nameInput.value = profileTitle.textContent;

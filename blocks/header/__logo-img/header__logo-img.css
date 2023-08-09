@@ -1,0 +1,11 @@
+.header__logo-img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header__logo-img {
+    margin: 0 0 0 27px;
+  }
+}

@@ -1,7 +1,13 @@
 .elements__cell-heart {
-    max-width: 22px;
+    min-width: 22px;
+    height: 19px;
     opacity: 1;
     cursor: pointer;
+    background-image: url(../../../images/heart.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    align-self: center;
+    border: none;
   }
   
   .elements__cell-heart:hover {
