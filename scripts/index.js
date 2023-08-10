@@ -8,19 +8,20 @@ const subnameInput = document.querySelector("#subname-input");
 const editForm = document.querySelector("#edit-form");
 const savePopupButton = document.querySelector("#save-popup-button");
 
-openPopupButton.addEventListener("click", function () {
+function openPopup() {
   editPopup.classList.add("popup__opened");
-});
-closePopupButton.addEventListener("click", function () {
-  editPopup.classList.remove("popup__opened");
-});
+  nameInput.value = profileTitle.textContent;
+  subnameInput.value = profileSubtitle.textContent;
+}
 
-savePopupButton.addEventListener("click", function () {
+function closePopup() {
   editPopup.classList.remove("popup__opened");
-});
+}
 
-nameInput.value = profileTitle.textContent;
-subnameInput.value = profileSubtitle.textContent;
+openPopupButton.addEventListener("click", openPopup);
+closePopupButton.addEventListener("click", closePopup);
+
+savePopupButton.addEventListener("click", closePopup);
 
 editForm.addEventListener("submit", function (event) {
   event.preventDefault();
