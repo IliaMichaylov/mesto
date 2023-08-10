@@ -28,4 +28,5 @@ editForm.addEventListener("submit", function (event) {
 
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = subnameInput.value;
+  closePopup
 });
