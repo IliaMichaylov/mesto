@@ -1,0 +1,6 @@
+.elements__cell-heart_active {
+  opacity: 1;
+  background-image: url("../../../images/blackheart.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+}

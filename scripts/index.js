@@ -6,7 +6,7 @@ const profileSubtitle = document.querySelector(".profile__subtitle");
 const nameInput = document.querySelector("#name-input");
 const subnameInput = document.querySelector("#subname-input");
 const editForm = document.querySelector("#edit-form");
-const savePopupButton = document.querySelector("#save-popup-button");
+
 
 function openPopup() {
   editPopup.classList.add("popup__opened");
@@ -28,5 +28,5 @@ editForm.addEventListener("submit", function (event) {
 
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = subnameInput.value;
-  closePopup
+  closePopupButton.addEventListener("click", closePopup);
 });
