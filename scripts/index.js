@@ -7,11 +7,10 @@ const nameInput = document.querySelector("#name-input");
 const subnameInput = document.querySelector("#subname-input");
 const editForm = document.querySelector("#edit-form");
 
-
 function openPopup() {
-  editPopup.classList.add("popup__opened");
   nameInput.value = profileTitle.textContent;
   subnameInput.value = profileSubtitle.textContent;
+  editPopup.classList.add("popup__opened");
 }
 
 function closePopup() {
