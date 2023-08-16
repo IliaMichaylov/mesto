@@ -5,6 +5,9 @@
   border-bottom: 1px solid rgb(0, 0, 0, 0.2);
   font-size: 14px;
   line-height: 16.94px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .popup__input:nth-child(odd) {
