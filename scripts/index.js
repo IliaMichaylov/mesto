@@ -8,18 +8,25 @@ const subnameInput = document.querySelector("#subname-input");
 const editForm = document.querySelector("#edit-form");
 
 
+
+
+function closePopup() {
+  editPopup.classList.remove("popup_opened");
+}
+
 function openPopup() {
   nameInput.value = profileTitle.textContent;
   subnameInput.value = profileSubtitle.textContent;
-  editPopup.classList.add("popup__opened");
+  editPopup.classList.add("popup_opened");
 }
 
-function closePopup() {
-  editPopup.classList.remove("popup__opened");
-}
+
+
+
 
 openPopupButton.addEventListener("click", openPopup);
 closePopupButton.addEventListener("click", closePopup);
+
 
 editForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -27,4 +34,6 @@ editForm.addEventListener("submit", function (event) {
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = subnameInput.value;
   closePopup();
+
+
 });
