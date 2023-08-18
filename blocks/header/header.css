@@ -3,7 +3,7 @@
   padding-top: 45px;
   max-width: 880px;
   min-height: 74px;
-  border-bottom: 1px #545454 solid;
+  border-bottom: 1px rgba(84, 84, 84, 0.7) solid;
 
 
 }
@@ -17,7 +17,7 @@
 
 @media (max-width: 768px) {
   .header {
-    padding-top: 18px;
+    padding-top: 28px;
     max-width: 320px;
   }
 }
