@@ -5,7 +5,7 @@ function closePopup() {
   const popup = document.querySelector(".popup_opened");
   popup.classList.remove("popup_opened");
 
-  const closePopupButton = popup.querySelector("#close-popup-button");
+  const closePopupButton = popup.querySelector(".popup__button-close");
   closePopupButton.removeEventListener("click", closePopup);
 }
 
@@ -13,7 +13,7 @@ function openPopup(id = "") {
   const popup = document.querySelector(`#${id}`);
   popup.classList.add("popup_opened");
 
-  const closePopupButton = popup.querySelector("#close-popup-button");
+  const closePopupButton = popup.querySelector(".popup__button-close");
   closePopupButton.addEventListener("click", closePopup);
 }
 
@@ -184,7 +184,3 @@ addCardForm.addEventListener("submit", function (event) {
 
   closePopup();
 });
-
-/**
- * Попап картинки
- */
