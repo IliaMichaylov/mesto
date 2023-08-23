@@ -31,7 +31,11 @@
           ></button>
           <p class="profile__subtitle">Исследователь океана</p>
         </div>
-        <button type="button" class="profile__add-button"></button>
+        <button
+          type="button"
+          id="open-pop-up-button"
+          class="profile__add-button"
+        ></button>
       </section>
       <section class="elements">
         <ul class="elements__cell-list">
@@ -136,6 +140,39 @@
           id="close-popup-button"
           class="popup__button-close"
         ></button>
+        <div id="card-pop-up" class="pop-up">
+          <div class="pop-up__container">
+            <h2 class="pop-up__title">Новое место</h2>
+            <form name="card-form" id="card-form" class="pop-up__form">
+              <input placeholder="Название"
+                name="Name"
+                id="nomination-input"
+                type="text"
+                class="pop-up__input"
+              />
+              <input placeholder="Ccылка на картинку"
+                name="URL"
+                id="url-input"
+                type="text"
+                class="pop-up__input"
+              />
+              <button
+                id="create-pop-up-button"
+                type="submit"
+                class="pop-up__button-create"
+              >
+                Создать
+              </button>
+            </form>
+            <button
+              type="button"
+              id="close-pop-up-button"
+              class="pop-up__button-close"
+              class="popup__button-close"
+            ></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="./scripts/index.js"></script>
