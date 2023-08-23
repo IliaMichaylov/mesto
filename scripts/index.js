@@ -93,11 +93,26 @@ function createCard({ name, link }) {
       <h2 class="elements__cell-title">${name}</h2>
     </div>
   `
+
+  const deleteButton = createDeleteButton(element)
+  element.prepend(deleteButton)
   
   const heartButton = createHeartButton()
   element.querySelector('.elements__cell-name').append(heartButton)
 
   return element
+}
+
+function createDeleteButton(cardElement) {
+  const button = document.createElement('button');
+  button.setAttribute('type', 'button');
+  button.classList.add('elements__cell-trash');
+
+  button.addEventListener('click', function() {
+    cardElement.remove();
+  });
+
+  return button;
 }
 
 function createHeartButton() {
