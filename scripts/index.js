@@ -6,7 +6,7 @@ function closePopup() {
   popup.classList.remove("popup_opened");
 
   const closePopupButton = popup.querySelector("#close-popup-button");
-  closePopupButton.removeEventListener("click");
+  closePopupButton.removeEventListener("click", closePopup);
 }
 
 function openPopup(id = '') {
@@ -41,8 +41,11 @@ const editForm = document.querySelector("#edit-form");
 editForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  profileTitle.textContent = nameInput.value;
-  profileSubtitle.textContent = subnameInput.value;
+  const nameField = event.target.querySelector('#name-input');
+  profileTitle.textContent = nameField ? nameField.value : '';
+
+  const subnameField = event.target.querySelector('#subname-input');
+  profileSubtitle.textContent = subnameField ? subnameField.value : '';
   closePopup();
 });
 
@@ -76,26 +79,44 @@ const initialCards = [
   }
 ];
 
+function createCard({ name, link }) {
+  const element = document.createElement('li')
+  element.classList.add('elements__cell')
+
+  element.innerHTML = `
+    <img
+      src="${link}"
+      alt="${name}"
+      class="elements__cell-img"
+    />
+    <div class="elements__cell-name">
+      <h2 class="elements__cell-title">${name}</h2>
+    </div>
+  `
+  
+  const heartButton = createHeartButton()
+  element.querySelector('.elements__cell-name').append(heartButton)
+
+  return element
+}
+
+function createHeartButton() {
+  const button = document.createElement('button');
+  button.setAttribute('type', 'button');
+  button.classList.add('elements__cell-heart');
+
+  button.addEventListener('click', function() {
+    button.classList.toggle('elements__cell-heart_active');
+  });
+
+  return button;
+}
+
 function initCards() {
-  const cardsList = document.querySelector('.elements__cell-list')
+  const cardList = document.querySelector('.elements__cell-list')
 
   initialCards.forEach(function(card) {
-    const element = document.createElement('li')
-    element.classList.add('elements__cell')
-  
-    element.innerHTML = `
-      <img
-        src="${card.link}"
-        alt="${card.name}"
-        class="elements__cell-img"
-      />
-      <div class="elements__cell-name">
-        <h2 class="elements__cell-title">${card.name}</h2>
-        <button type="button" class="elements__cell-heart"></button>
-      </div>
-    `
-
-    cardsList.appendChild(element)
+    cardList.append(createCard(card))
   })
 }
 
@@ -113,7 +134,18 @@ const addCardForm = document.querySelector("#add-card-form");
 addCardForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  profileTitle.textContent = nameInput.value;
-  profileSubtitle.textContent = subnameInput.value;
+  const nameField = event.target.querySelector('#card-name-input');
+  const linkField = event.target.querySelector('#card-link-input');
+  const cardElement = createCard({
+    name: nameField ? nameField.value : '',
+    link: linkField ? linkField.value : '',
+  })
+
+  const cardList = document.querySelector('.elements__cell-list');
+  cardList.prepend(cardElement);
+
+  nameField.value = '';
+  linkField.value = '';
+
   closePopup();
 });
